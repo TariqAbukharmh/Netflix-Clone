@@ -20,10 +20,9 @@ export default function Home() {
 
     return (
         <>
-            <h1> Home page </h1>
-            {
-                movies && <MovieList movies={movies} />
-            }
+            <NavBar />
+            {movies && <MoviesList movies={movies} />}
         </>
+
     );
 }
